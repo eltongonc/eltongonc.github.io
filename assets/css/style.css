@@ -12,45 +12,36 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "lato";
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    min-height: 100vh
 }
 
 .hidden {
     visibility: hidden;
     height: 0;
     opacity: 0;
-
+    overflow: hidden;
 }
 
-header {
-    align-items: center;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1em;
-    position: fixed;
-    top: 0;
 
-}
 ul,
 ol {
+    padding: 0;
     list-style: none;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 }
 ul li,
 ol li {
     height: inherit;
     width: auto;
-    padding: 1em;
+    padding: .5em;
+    margin: .1em;
+
 }
-
-header ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
-
 
 /* Typoghraphy*/
 h1,
@@ -64,6 +55,9 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 1.2em;
+}
 
 a {
     background-color: #875053;
@@ -76,40 +70,48 @@ a {
 }
 a:hover {
     background-color: #84596B;
-    /*color: red*/
 }
+
 
 
 /* Sections */
-section {
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+header {
     align-items: center;
-    transition: .3s ease-in-out;
-}
-
-
-section div {
-    display: block;
-    padding: 10em;
-    border: solid white;
-    padding: 10em;
-    border-radius: 0.2em;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section ul {
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 1em;
+    padding: 1em;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+    display: block;
+    border: solid white;
+    min-width: 90vw;
+    height: 40vh;
+    border-radius: 0.2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
