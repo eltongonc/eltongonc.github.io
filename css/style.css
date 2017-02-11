@@ -4,8 +4,11 @@
     padding: 0;
 }
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-family: "lato"
 }
 
@@ -15,9 +18,15 @@ header {
     height: 30vh;
     min-width: 100%;
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 header h1 {
@@ -38,16 +47,25 @@ main h1 {
 }
 main nav {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 main nav a {
     color: #bd4043;
     text-decoration: none;
     border: 0.1em solid white;
+    -webkit-transition: .3s;
     transition: .3s;
     padding: 1em;
 }
