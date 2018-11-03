@@ -1,8 +1,9 @@
 
+![Poster](./images/poster.jpg)
+
 # Portfolio
 This repo contains a demo of my portfolio that is currently live.
 
-![Poster](./images/poster.jpg)
 
 ## A little bit about me
 I'm a T-shaped Front-end developer who focusses on coding but also knows a thing or two about UI and UX
